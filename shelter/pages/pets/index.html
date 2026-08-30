@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our pets — Cozy House</title>
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/styles/normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container header__inner">
+      <a class="logo" href="../main/index.html">
+        <span class="logo__title">Cozy House</span>
+        <span class="logo__subtitle">Shelter for pets in Boston</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="../main/index.html">About the shelter</a>
+          </li>
+          <li class="nav__item">
+            <span class="nav__link nav__link--active">Our pets</span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="../main/index.html#help">Help the shelter</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#footer">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="friends" id="friends" aria-labelledby="friends-title">
+      <div class="container friends__inner">
+        <h1 class="friends__title" id="friends-title">Our friends who<br>are looking for a house</h1>
+        <ul class="friends__list">
+          <li class="pet-card">
+            <article class="pet-card__inner">
+              <img class="pet-card__image" src="../../assets/images/pets-katrine.png" alt="Katrine the cat" width="270" height="270">
+              <h2 class="pet-card__name">Katrine</h2>
+              <button class="button button--secondary" type="button">Learn more</button>
+            </article>
+          </li>
+          <li class="pet-card">
+            <article class="pet-card__inner">
+              <img class="pet-card__image" src="../../assets/images/pets-jennifer.png" alt="Jennifer the dog" width="270" height="270">
+              <h2 class="pet-card__name">Jennifer</h2>
+              <button class="button button--secondary" type="button">Learn more</button>
+            </article>
+          </li>
+          <li class="pet-card">
+            <article class="pet-card__inner">
+              <img class="pet-card__image" src="../../assets/images/pets-woody.png" alt="Woody the dog" width="270" height="270">
+              <h2 class="pet-card__name">Woody</h2>
+              <button class="button button--secondary" type="button">Learn more</button>
+            </article>
+          </li>
+          <li class="pet-card">
+            <article class="pet-card__inner">
+              <img class="pet-card__image" src="../../assets/images/pets-sophia.png" alt="Sophia the dog" width="270" height="270">
+              <h2 class="pet-card__name">Sophia</h2>
+              <button class="button button--secondary" type="button">Learn more</button>
+            </article>
+          </li>
+          <li class="pet-card">
+            <article class="pet-card__inner">
+              <img class="pet-card__image" src="../../assets/images/pets-timmy.png" alt="Timmy the cat" width="270" height="270">
+              <h2 class="pet-card__name">Timmy</h2>
+              <button class="button button--secondary" type="button">Learn more</button>
+            </article>
+          </li>
+          <li class="pet-card">
+            <article class="pet-card__inner">
+              <img class="pet-card__image" src="../../assets/images/pets-charly.png" alt="Charly the dog" width="270" height="270">
+              <h2 class="pet-card__name">Charly</h2>
+              <button class="button button--secondary" type="button">Learn more</button>
+            </article>
+          </li>
+          <li class="pet-card">
+            <article class="pet-card__inner">
+              <img class="pet-card__image" src="../../assets/images/pets-scarlet.png" alt="Scarlett the dog" width="270" height="270">
+              <h2 class="pet-card__name">Scarlett</h2>
+              <button class="button button--secondary" type="button">Learn more</button>
+            </article>
+          </li>
+          <li class="pet-card">
+            <article class="pet-card__inner">
+              <img class="pet-card__image" src="../../assets/images/pets-freddie.png" alt="Freddie the cat" width="270" height="270">
+              <h2 class="pet-card__name">Freddie</h2>
+              <button class="button button--secondary" type="button">Learn more</button>
+            </article>
+          </li>
+        </ul>
+        <nav class="pagination" aria-label="Pets pagination">
+          <button class="pagination__btn pagination__btn--inactive" type="button" disabled aria-label="First page">&lt;&lt;</button>
+          <button class="pagination__btn pagination__btn--inactive" type="button" disabled aria-label="Previous page">&lt;</button>
+          <button class="pagination__btn pagination__btn--active" type="button" aria-current="page" aria-label="Page 1">1</button>
+          <button class="pagination__btn" type="button" aria-label="Next page">&gt;</button>
+          <button class="pagination__btn" type="button" aria-label="Last page">&gt;&gt;</button>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__contacts">
+        <h3 class="footer__title">For questions<br>and suggestions</h3>
+        <a class="footer__link" href="mailto:email@shelter.com">
+          <img src="../../assets/icons/icon-email.svg" alt="" width="40" height="32">
+          <span>email@shelter.com</span>
+        </a>
+        <a class="footer__link" href="tel:+136745677554">
+          <img src="../../assets/icons/icon-phone.svg" alt="" width="40" height="32">
+          <span>+13 674 567 75 54</span>
+        </a>
+      </div>
+      <div class="footer__locations">
+        <h3 class="footer__title">We are waiting<br>for your visit</h3>
+        <a
+          class="footer__link"
+          href="https://www.google.com/maps/place/1+Central+St,+Boston,+MA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../../assets/icons/icon-marker.svg" alt="" width="22" height="32">
+          <span>1 Central Street, Boston<br>(entrance from the store)</span>
+        </a>
+        <a
+          class="footer__link"
+          href="https://www.google.com/maps/place/18+South+Park,+London"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../../assets/icons/icon-marker.svg" alt="" width="22" height="32">
+          <span>18 South Park, London</span>
+        </a>
+      </div>
+      <img
+        class="footer__image"
+        src="../../assets/images/footer-puppy.png"
+        alt="A puppy sitting"
+        width="300"
+        height="310"
+      >
+    </div>
+  </footer>
+</body>
+</html>
