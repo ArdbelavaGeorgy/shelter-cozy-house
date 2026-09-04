@@ -24,12 +24,13 @@ html {
 }
 
 body {
-  min-width: var(--content-width);
+  min-width: 320px;
   font-family: var(--font-body);
   font-size: 15px;
   line-height: 1.6;
   color: var(--color-dark-l);
   background-color: var(--color-light-xl);
+  overflow-x: hidden;
 }
 
 h1,
@@ -70,10 +71,13 @@ button:disabled {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: var(--content-width);
+  max-width: var(--content-width);
+  width: 100%;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -189,6 +193,16 @@ img {
   bottom: -4px;
   height: 3px;
   background-color: var(--color-primary);
+}
+
+.burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  color: var(--color-dark-3xl);
 }
 
 .friends {
@@ -402,4 +416,136 @@ img {
   height: 310px;
   object-fit: contain;
   align-self: flex-start;
+}
+
+@media screen and (max-width: 1279px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .header__inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .friends__inner {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
+
+  .friends__list {
+    grid-template-columns: repeat(2, minmax(0, 270px));
+    column-gap: 40px;
+    row-gap: 45px;
+  }
+
+  .footer__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 0 30px;
+  }
+
+  .footer__contacts,
+  .footer__locations {
+    margin-top: 0;
+    width: auto;
+    max-width: none;
+  }
+
+  .footer__image {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 65px;
+    width: 300px;
+    height: auto;
+    aspect-ratio: 300 / 310;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .header__inner {
+    height: auto;
+    min-height: 60px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .friends__inner {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .friends__title {
+    font-size: 25px;
+    margin-bottom: 42px;
+  }
+
+  .friends__list {
+    grid-template-columns: minmax(0, 270px);
+    justify-items: center;
+    row-gap: 45px;
+    margin-bottom: 42px;
+  }
+
+  .pagination {
+    gap: 10px;
+  }
+
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer__contacts,
+  .footer__locations {
+    width: 100%;
+    max-width: 278px;
+    align-items: center;
+  }
+
+  .footer__title {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .footer__locations .footer__title {
+    margin-bottom: 25px;
+  }
+
+  .footer__link {
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+
+  .footer__locations .footer__link {
+    margin-bottom: 25px;
+  }
+
+  .footer__image {
+    width: 260px;
+    margin-top: 40px;
+    aspect-ratio: 260 / 269;
+  }
 }
